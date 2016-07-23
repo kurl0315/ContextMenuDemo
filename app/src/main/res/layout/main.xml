@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/sea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fis.contextmenudemo.Main">
+
+    <TableRow android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:src="@drawable/cat"
+                android:adjustViewBounds="true"
+                android:maxHeight="10px"
+                android:minWidth="10px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+            <ImageView
+                android:src="@drawable/girl"
+                android:adjustViewBounds="true"
+                android:maxHeight="30px"
+                android:minWidth="30px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+            <ImageView
+                android:src="@drawable/pig"
+                android:adjustViewBounds="true"
+                android:maxHeight="100px"
+                android:minWidth="100px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+
+    </TableRow>
+    <TableRow android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:src="@drawable/cat"
+                android:adjustViewBounds="true"
+                android:maxHeight="10px"
+                android:minWidth="10px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+            <ImageView
+                android:src="@drawable/girl"
+                android:adjustViewBounds="true"
+                android:maxHeight="30px"
+                android:minWidth="30px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+            <ImageView
+                android:src="@drawable/pig"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+                android:maxHeight="100px"
+                android:minWidth="100px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+    </TableRow>
+    <TableRow android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:textSize="30px"
+                android:gravity="center_vertical"
+                android:layout_width="160px"
+                android:layout_height="90px"
+                android:textColor="#0000ff"
+                android:text="USERNAME"
+                android:id="@+id/textView"
+                />
+
+            <EditText
+                android:hint="please input your name"
+                android:textSize="20px"
+
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:id="@+id/editText"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView" />
+
+            <TextView
+                android:layout_width="160px"
+                android:layout_height="90px"
+                android:gravity="center"
+                android:text="PASSWORD"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                android:layout_toLeftOf="@+id/editText"
+                android:layout_toStartOf="@+id/editText" />
+
+            <EditText
+                android:hint="please input your password"
+                android:textSize="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_below="@+id/editText"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:id="@+id/button"
+                android:layout_below="@+id/editText2"
+                android:layout_alignRight="@+id/editText2"
+                android:layout_alignEnd="@+id/editText2"
+                android:layout_marginRight="77dp"
+                android:layout_marginEnd="77dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:id="@+id/button2"
+                android:layout_below="@+id/button"
+                android:layout_alignLeft="@+id/button"
+                android:layout_alignStart="@+id/button"
+                android:layout_alignRight="@+id/button"
+                android:layout_alignEnd="@+id/button" />
+
+            <ImageButton
+                android:src="@drawable/dog"
+                android:adjustViewBounds="true"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:scaleType="fitCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_below="@+id/button2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </TableRow>
+
+</TableLayout>
