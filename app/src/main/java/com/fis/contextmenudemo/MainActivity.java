@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import static android.widget.Toast.*;
+import static android.widget.Toast.LENGTH_SHORT;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 //        为listView创建上下文菜单
         this.registerForContextMenu(listView);
+
     }
+
+
 
 //    创建上下文菜单内容
     @Override
@@ -41,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreateContextMenu(menu, v, menuInfo);
         menu.setHeaderTitle("文件操作");
         menu.setHeaderIcon(R.mipmap.ic_launcher);
-
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main,menu);
     }
